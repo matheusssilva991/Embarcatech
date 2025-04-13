@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Matheus Santos Silva",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": -22.45,
+      "left": -15.65,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 124,
+      "left": -104.2,
+      "rotate": 270,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "pico:GP13", "led1:A", "green", [ "h0" ] ],
+    [ "pico:GND.4", "led1:C", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
