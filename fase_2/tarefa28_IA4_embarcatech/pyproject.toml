@@ -1,0 +1,15 @@
+[project]
+name = "tarefa28-ia4-embarcatech"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.1.0",
+    "matplotlib>=3.10.8",
+    "pandas>=2.3.3",
+    "pip>=25.3",
+    "pyserial>=3.5",
+    "scikit-learn>=1.8.0",
+    "tensorflow>=2.20.0",
+]

@@ -1,0 +1,5 @@
+build/
+!.vscode/*
+lib/pico-tfmicro/
+.venv/
+config/wifi_config.h

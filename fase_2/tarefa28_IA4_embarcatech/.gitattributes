@@ -1,0 +1,15 @@
+# Linguagens
+*.c linguist-language=C
+*.h linguist-language=C
+*.cpp linguist-language=C++
+*.py linguist-language=Python
+
+# Arquivos binários
+*.tflite binary
+*.keras binary
+*.uf2 binary
+
+# Arquivos gerados (não considerar em estatísticas)
+samples/*.h linguist-generated=true
+models/mnist_cnn_int8_model.h linguist-generated=true
+build/* linguist-generated=true
